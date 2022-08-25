@@ -1,7 +1,11 @@
 .editor {
-  padding: 20px;
-  background-color: rgb(23, 108, 182);
   z-index: 20;
+  padding: 27px;
+  width: 520px;
+  height: auto;
+  min-height: 154px;
+  max-width: 920px;
+  background: linear-gradient(140deg, rgb(207, 47, 152), rgb(106, 61, 236));
 }
 
   

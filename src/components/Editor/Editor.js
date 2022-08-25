@@ -23,7 +23,6 @@ export default function Editor() {
     if (typeof link.download === 'string') {
       link.href = data;
       link.download = 'image.jpg';
-      link.style.borderRadius  = '20px'
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
