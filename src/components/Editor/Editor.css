@@ -1,11 +1,35 @@
 .editor {
   z-index: 20;
   padding: 27px;
-  width: 520px;
   height: auto;
-  min-height: 154px;
   max-width: 920px;
   background: linear-gradient(140deg, rgb(207, 47, 152), rgb(106, 61, 236));
+
 }
 
+.editor__area {
+  height: auto;
+  font-size: 16px;
+}
+.ͼ1 .cm-scroller {
+  border-radius: 10px;
+
+}
+.cm-content {
+  padding: 10px;
+}
+
+.ͼ3 .cm-line {
+  background-color: #00000059;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.ͼ15 .cm-gutters {
+  display: none;
+}
+
+.ͼ1.cm-editor {
+  background: none;
+}
   

@@ -33,21 +33,27 @@ export default function Editor() {
 
 
   return (
+    <>    
+    <button type="button" onClick={handleDownloadImage}>
+    Download as Image
+  </button> 
     <div className='editor' ref={printRef}>
+      <header className='editor-header'></header>
       <CodeMirror
         className='editor__area'
         value={code}
-        height='200px'
+        height= 'auto'
         theme={okaidia}
         extensions={[loadLanguage('javascript')]}
         onChange={onChange}
         
       />
        <div>
-      <button type="button" onClick={handleDownloadImage}>
-        Download as Image
-      </button> 
+
     </div>
+
     </div>
+
+    </>
   );
 }
