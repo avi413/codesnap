@@ -14,7 +14,6 @@
   background-color: rgba(0,0,0,0.75);
   border-radius: 12px;
   padding: 16px;
-  transform-style: preserve-3d;
   box-sizing: border-box;
 }
 
@@ -30,6 +29,14 @@
 }
 
 .cm-s-material.CodeMirror {
-  background-color: #263238;
+  background-color: transparent!important;
   color: rgba(233,237,237,1);
+
+}
+.ͼ1.cm-editor {
+  background-color: transparent!important;
+}
+
+.cm-activeLine {
+  background-color: transparent!important;
 }

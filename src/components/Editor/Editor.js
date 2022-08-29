@@ -38,6 +38,48 @@ export default function Editor() {
     Download as Image
   </button> 
     <div className='editor' ref={printRef}>
+    <div className='editor__frame'>
+          <header className='editor-header'>
+            <svg
+              _ngcontent-knt-c6=''
+              height='14'
+              viewBox='0 0 54 14'
+              width='54'
+              xmlns='http://www.w3.org/2000/svg'
+              className='ng-star-inserted'
+            >
+              <g
+                _ngcontent-knt-c6=''
+                fill='none'
+                transform='translate(1 1)'
+              >
+                <circle
+                  _ngcontent-knt-c6=''
+                  cx='6'
+                  cy='6'
+                  fill='#FF5F56'
+                  r='6'
+                  stroke='#E0443E'
+                ></circle>
+                <circle
+                  _ngcontent-knt-c6=''
+                  cx='26'
+                  cy='6'
+                  fill='#FFBD2E'
+                  r='6'
+                  stroke='#DEA123'
+                ></circle>
+                <circle
+                  _ngcontent-knt-c6=''
+                  cx='46'
+                  cy='6'
+                  fill='#27C93F'
+                  r='6'
+                  stroke='#1AAB29'
+                ></circle>
+              </g>
+            </svg>
+          </header>
       <header className='editor-header'></header>
       <CodeMirror
         className='editor__area'
@@ -49,7 +91,7 @@ export default function Editor() {
         
       />
        <div>
-
+</div>
     </div>
 
     </div>
