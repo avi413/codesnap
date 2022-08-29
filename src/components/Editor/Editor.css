@@ -27,9 +27,15 @@
 .editor__area {
   height: auto;
   font-size: 16px;
-  min-width: 350px
+  min-width: 350px;
 }
 
+@media only screen and (max-width: 450px){
+  .editor__area {
+    min-width: 150px;
+    max-width: 340px;
+  }
+}
 
 .ͼ15 .cm-gutters {
   display: none;
