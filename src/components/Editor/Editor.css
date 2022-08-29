@@ -1,6 +1,13 @@
+.button_type_editor {
+  background: none;
+  cursor: pointer;
+}
+.shoot-img {
+  width: 60px;
+}
 .editor {
   z-index: 20;
-  padding: 27px;
+  padding: 25px;
   height: auto;
   max-width: 920px;
   background: linear-gradient(140deg, rgb(207, 47, 152), rgb(106, 61, 236));
@@ -20,7 +27,7 @@
 .editor__area {
   height: auto;
   font-size: 16px;
-
+  min-width: 350px
 }
 
 

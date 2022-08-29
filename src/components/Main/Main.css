@@ -5,11 +5,12 @@
 }
 
 .main__editor-container {
-    flex: 1;
+    flex: 1 1;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     margin: auto;
     flex-direction: column;
     gap: 30px;
+    padding-top: 170px;
 }

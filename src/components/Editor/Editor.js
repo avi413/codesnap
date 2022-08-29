@@ -4,12 +4,13 @@ import { okaidia } from '@uiw/codemirror-theme-okaidia';
 import { loadLanguage } from '@uiw/codemirror-extensions-langs';
 import { useRef, useState } from 'react';
 import html2canvas from 'html2canvas';
+import shoot from '../../images/camera.png';
 
 export default function Editor() {
   const [code, setCode] = useState("console.log('hello world!');");
-  const onChange = ((editor, change) => {
-    setCode(editor)
-  });
+  const onChange = (editor, change) => {
+    setCode(editor);
+  };
 
   const printRef = useRef();
 
@@ -31,14 +32,13 @@ export default function Editor() {
     }
   };
 
-
   return (
-    <>    
-    <button type="button" onClick={handleDownloadImage}>
-    Download as Image
-  </button> 
-    <div className='editor' ref={printRef}>
-    <div className='editor__frame'>
+    <>
+      <button type='button' onClick={handleDownloadImage} className='buuton button_type_editor'>
+        <img src={shoot} alt='take a shoot' className='shoot-img' />
+      </button>
+      <div className='editor' ref={printRef}>
+        <div className='editor__frame'>
           <header className='editor-header'>
             <svg
               _ngcontent-knt-c6=''
@@ -48,11 +48,7 @@ export default function Editor() {
               xmlns='http://www.w3.org/2000/svg'
               className='ng-star-inserted'
             >
-              <g
-                _ngcontent-knt-c6=''
-                fill='none'
-                transform='translate(1 1)'
-              >
+              <g _ngcontent-knt-c6='' fill='none' transform='translate(1 1)'>
                 <circle
                   _ngcontent-knt-c6=''
                   cx='6'
@@ -80,22 +76,18 @@ export default function Editor() {
               </g>
             </svg>
           </header>
-      <header className='editor-header'></header>
-      <CodeMirror
-        className='editor__area'
-        value={code}
-        height= 'auto'
-        theme={okaidia}
-        extensions={[loadLanguage('javascript')]}
-        onChange={onChange}
-        
-      />
-       <div>
-</div>
-    </div>
-
-    </div>
-
+          <header className='editor-header'></header>
+          <CodeMirror
+            className='editor__area'
+            value={code}
+            height='auto'
+            theme={okaidia}
+            extensions={[loadLanguage('javascript')]}
+            onChange={onChange}
+          />
+          <div></div>
+        </div>
+      </div>
     </>
   );
 }
