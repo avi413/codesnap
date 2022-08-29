@@ -37,11 +37,11 @@ export default function Editor() {
     const value = event.target.value;
     setLang(value);
   };
-  
+
   return (
     <>
       <div className='top'>
-        <select name='langs' id='langs' onChange={handleChange}>
+        <select name='langs' id='langs' onChange={handleChange} value={lang}>
           {langNames.map((lang) => (
             <option value={lang} key={lang}>
               {lang}
