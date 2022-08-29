@@ -1,16 +1,21 @@
 import './Editor.css';
 import CodeMirror from '@uiw/react-codemirror';
 import { okaidia } from '@uiw/codemirror-theme-okaidia';
-import { loadLanguage } from '@uiw/codemirror-extensions-langs';
-import { useRef, useState } from 'react';
+import {  loadLanguage, langNames } from '@uiw/codemirror-extensions-langs';
+import { useEffect, useRef, useState } from 'react';
 import html2canvas from 'html2canvas';
 import shoot from '../../images/camera.png';
 
 export default function Editor() {
   const [code, setCode] = useState("console.log('hello world!');");
+  const [lang, setLang] = useState('javascript')
   const onChange = (editor, change) => {
     setCode(editor);
   };
+ 
+  
+ console.log(lang);
+
 
   const printRef = useRef();
 
@@ -32,11 +37,24 @@ export default function Editor() {
     }
   };
 
+  const handleChange  = (event) => {
+
+    const value = event.value;
+    setLang(value);
+
+}
   return (
     <>
-      <button type='button' onClick={handleDownloadImage} className='buuton button_type_editor'>
+    <div className='top'>
+      <select name="langs" id="langs" onChange={handleChange}>
+        {langNames.map((lang) =>  <option value={lang}  key={lang}>{lang}</option> )}
+      </select>
+    <button type='button' onClick={handleDownloadImage} className='buuton button_type_editor'>
         <img src={shoot} alt='take a shoot' className='shoot-img' />
       </button>
+
+    </div>
+
       <div className='editor' ref={printRef}>
         <div className='editor__frame'>
           <header className='editor-header'>
@@ -82,7 +100,7 @@ export default function Editor() {
             value={code}
             height='auto'
             theme={okaidia}
-            extensions={[loadLanguage('javascript')]}
+            extensions={[loadLanguage(lang)]}
             onChange={onChange}
             maxWidth='350'
           />
