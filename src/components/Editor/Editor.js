@@ -84,6 +84,7 @@ export default function Editor() {
             theme={okaidia}
             extensions={[loadLanguage('javascript')]}
             onChange={onChange}
+            maxWidth='350'
           />
           <div></div>
         </div>
