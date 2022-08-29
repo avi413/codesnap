@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/codesnap/static/css/main.14c82810.css",
-    "main.js": "/codesnap/static/js/main.ce17ee3f.js",
+    "main.css": "/codesnap/static/css/main.29817adb.css",
+    "main.js": "/codesnap/static/js/main.7051a41b.js",
     "static/js/412.b7c879f2.chunk.js": "/codesnap/static/js/412.b7c879f2.chunk.js",
     "static/js/379.62939de8.chunk.js": "/codesnap/static/js/379.62939de8.chunk.js",
     "static/js/54.37b6f7d5.chunk.js": "/codesnap/static/js/54.37b6f7d5.chunk.js",
@@ -11,8 +11,8 @@
     "static/js/311.8422cd88.chunk.js": "/codesnap/static/js/311.8422cd88.chunk.js",
     "static/js/997.cdce8111.chunk.js": "/codesnap/static/js/997.cdce8111.chunk.js",
     "index.html": "/codesnap/index.html",
-    "main.14c82810.css.map": "/codesnap/static/css/main.14c82810.css.map",
-    "main.ce17ee3f.js.map": "/codesnap/static/js/main.ce17ee3f.js.map",
+    "main.29817adb.css.map": "/codesnap/static/css/main.29817adb.css.map",
+    "main.7051a41b.js.map": "/codesnap/static/js/main.7051a41b.js.map",
     "412.b7c879f2.chunk.js.map": "/codesnap/static/js/412.b7c879f2.chunk.js.map",
     "379.62939de8.chunk.js.map": "/codesnap/static/js/379.62939de8.chunk.js.map",
     "54.37b6f7d5.chunk.js.map": "/codesnap/static/js/54.37b6f7d5.chunk.js.map",
@@ -23,7 +23,7 @@
     "997.cdce8111.chunk.js.map": "/codesnap/static/js/997.cdce8111.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.14c82810.css",
-    "static/js/main.ce17ee3f.js"
+    "static/css/main.29817adb.css",
+    "static/js/main.7051a41b.js"
   ]
 }
