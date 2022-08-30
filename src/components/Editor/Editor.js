@@ -2,7 +2,7 @@ import './Editor.css';
 import CodeMirror from '@uiw/react-codemirror';
 import { okaidia } from '@uiw/codemirror-theme-okaidia';
 import { loadLanguage, langNames } from '@uiw/codemirror-extensions-langs';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import useLocalStorage from '../../hooks/useLocalStorage';
 
 import html2canvas from 'html2canvas';
