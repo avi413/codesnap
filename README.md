@@ -4,7 +4,7 @@ Codesnap is a React app for taking a screenshot of the code snippet.
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use the clone  of this repository.
 
 ```bash
 npm install
