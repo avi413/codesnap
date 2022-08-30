@@ -2,13 +2,15 @@ import './Editor.css';
 import CodeMirror from '@uiw/react-codemirror';
 import { okaidia } from '@uiw/codemirror-theme-okaidia';
 import { loadLanguage, langNames } from '@uiw/codemirror-extensions-langs';
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
+import useLocalStorage from '../../hooks/useLocalStorage';
+
 import html2canvas from 'html2canvas';
 import shoot from '../../images/camera.png';
 
 export default function Editor() {
-  const [code, setCode] = useState("console.log('hello world!');");
-  const [lang, setLang] = useState('javascript');
+  const [code, setCode] = useLocalStorage('code','console.log(\'hello world!\');');
+  const [lang, setLang] = useLocalStorage('lang','javascript');
   const onChange = (editor, change) => {
     setCode(editor);
   };
