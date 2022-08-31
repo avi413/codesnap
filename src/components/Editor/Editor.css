@@ -63,6 +63,10 @@
     min-width: 150px;
     max-width: 340px;
   }
+  .editor__title {
+    max-width: 170px;
+    font-size: 16px;
+  }
 }
 
 .ͼ15 .cm-gutters {
